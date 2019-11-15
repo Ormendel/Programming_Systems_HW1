@@ -6,14 +6,14 @@ FLAGS= -Wall -g
 
 all: mymathd mymaths mains maind
 
-mains: $(MAINOBJECTS) libmyMath.a
+mains: $(Main_O) libmyMath.a
 	$(CC) $(flags) -o mains $(MAINOBJECTS) libmyMath.a
-maind: $(MAINOBJECTS)
+maind: $(Main_O)
 	$(CC) $(flags) -o maind $(MAINOBJECTS) ./libmyMath.so
 
-mymathd: $(LIBOBJECTS)
+mymathd: $(Lib_O)
 	$(CC) -shared -o libmyMath.so $(LIBOBJECTS)
-mymaths: $(LIBOBJECTS)
+mymaths: $(Lib_O)
 	$(AR) -rcs libmyMath.a $(LIBOBJECTS)
 
 main.o: main.c myMath.h
