@@ -7,7 +7,7 @@
 */
 void func1(double x)
 {
-	double ans=Exp((int)x);
+	double ans=Exp((int)x); //For the calculation in this assignment we are asked to take the integer part of x
 	ans=add(ans,Pow(x,3));
 	ans=sub(ans,2);
 	printf("The value of f(x) = (e^x) + (x^3) -2 at the point %f is: %0.4f . \n",x,ans);
