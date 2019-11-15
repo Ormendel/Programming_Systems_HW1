@@ -1,7 +1,7 @@
 CC=gcc 
 AR=ar
-MAINOBJECTS=main.o
-LIBOBJECTS=power.o basicMath.o myMath.h
+Main_O=main.o
+Lib_O=power.o basicMath.o myMath.h
 FLAGS= -Wall -g 
 
 all: mymathd mymaths mains maind
