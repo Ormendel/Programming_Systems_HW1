@@ -1,11 +1,7 @@
 #include <stdio.h>
 #include "myMath.h"
 #define e 2.7182
-double Exp(int x)
-{
-	double ans=Pow(e,x);
-	return ans;
-}
+
 double Pow(double x,int y)
 {
 	double res=1;
@@ -35,5 +31,11 @@ double Pow(double x,int y)
 		}			
 	}
 	return res;
+}
+
+double Exp(int x)
+{
+	double ans=Pow(e,x);
+	return ans;
 }
 	
