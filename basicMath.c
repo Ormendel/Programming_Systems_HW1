@@ -18,6 +18,11 @@ double mul(double x,int y)
 }
 double div(double x,int y)
 {
+	if(y==0)
+	{
+		printf("We can't divide any number by zero!\n");
+		return -1;
+	}
 	double res=x/y;
 	return res;
 }
